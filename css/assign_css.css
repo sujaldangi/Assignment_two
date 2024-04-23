@@ -1,0 +1,30 @@
+    /* will align the text feild */
+    body{
+        background-color:darkslategray;
+    }
+    .row {
+        display: table-row;
+    }
+    .row label {
+        display: table-cell;
+        text-align: left;        
+    }
+    .row input {
+        display: table-cell;
+    }
+    /* form and table positioning */
+    .left{
+        position: absolute;
+        background-color:cadetblue;
+        border-radius: 1%;
+        border:ridge;
+    }
+    .table{
+        position: absolute;
+        top:10px;
+        left: 350px;
+        background-color:cadetblue;
+        border-radius: 1%;
+        border:ridge;
+    }
+    

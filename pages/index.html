@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<title>Assignment_2</title>
+<!-- css for the webpage -->
+<link rel='stylesheet' type='text/css' href='../css/assign_css.css'>
+</head>
+<body>
+    <!-- form tag will contain all the input fields -->
+    <form action="" method="get" onsubmit="submitinfo(event)">
+        <!-- div class for left elements of the webpage -->
+        <div class="left">
+            <h1>Fill Your Information</h1>
+            <!-- input feilds -->
+            <div class="row">
+                <!-- name feild -->
+                <label for="name">Name:</label>
+                <input type="text" required id="name" name = 'name' onkeyup="handlechange(event)"><br><br>
+            </div>
+            <div class="row">
+                <!-- age feild -->
+                <label for="age">Age:</label>
+                <input type="text" required id="age" name = 'age' onkeyup="handlechange(event)"><br><br>
+            </div>
+            <div class="row">
+                <!-- country feild -->
+                <label for="country">Country:</label>
+                <input type="text"n id="country" required name = 'country' onkeyup="handlechange(event)"><br><br>
+            </div>
+            <div class="row">
+                <!-- language feild -->
+                <label for="lang">Language:</label>
+                <input type="text"n id="lang" required name = 'language' onkeyup="handlechange(event)"><br><br>
+            </div>
+                <!-- gender radio buttons -->
+                <label >Gender:&nbsp&nbsp&nbsp</label>
+                <label >Male</label>
+                <input type="radio" name="mf" required value="male" id="m">
+                <label >Female</label>
+                <input type="radio" name="mf" required value="female" id="f"><br><br>
+        <div >
+            <!-- date of birth feild -->
+            <label for="dob">D.O.B:&nbsp&nbsp&nbsp</label>
+            <input type="date" required id ='dob'>
+        </div><br>
+        <!-- submit button that will call on submit info function through form tag-->
+        <button type="submit">Submit</button>
+        </div>
+</form>
+<!-- table to show the data of the form -->
+    <div class="table">
+        <fieldset>
+        <h1>Table</h1>
+        <table border="1" id="tble">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+                <th>Language</th>
+                <th>Gender</th>
+                <th>D.O.B</th>
+            </tr>           
+        </table>
+    </fieldset>
+    </div>
+    <!-- source of our javascript file -->
+    <script src="../js/assignment2.js"></script>
+</body>
+</html>
